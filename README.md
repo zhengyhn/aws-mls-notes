@@ -59,6 +59,32 @@ My notes  for AWS machine learning specialist certificate exam
 * SMOTE is an oversampling technique that generates synthetic samples from the minority class
 
 
+| Scenario    | Solution |
+| -------- | ------- |
+|**MLS-C01 Domain 1: Data Engineering** ||
+|A company wants to automatically convert streaming JSON data into Apache Parquet before storing them in an S3 bucket|Use Amazon Kinesis Firehose|
+|A company uses Amazon EMR for its ETL processes. The company is looking for an alternative with a lower operational overhead|Run the ETL jobs using AWS Glue|
+|Which service should you use to deliver streaming data from Amazon MSK to a Redshift cluster with low latency?|Redshift Streaming Ingestion|
+|A data engineer is building a pipeline for streaming data. The data will be fetched from various sources.|Create an application that uses Kinesis Producer Library (KPL) to load streaming data from various sources into a Kinesis Data stream.|
+|A company wants to set up a data lake on Amazon S3. The data will be sourced from S3 buckets located in different AWS accounts. Which service can simplify the implementation of the data lake?|AWS Lake Formation|
+|**MLS-C01 Domain 2: Exploratory Data Analysis**||
+|An image classifier is getting high accuracy on the validation dataset. However, the accuracy significantly dropped when tested against real data. How can you improve the model’s performance?|Take existing images from the training data. Apply data augmentation techniques (ex: flipping, rotating, adjusting brightness) to the images and add them to the training data. Retrain the model|
+|What methods can a machine learning engineer use to reduce the size of a large dataset while retaining only relevant features?|1. Principal Component Analysis (PCA) 2. t-Distributed Stochastic Neighbor Embedding (t-SNE)|
+|A dataset contains a mixture of categorical and numerical features. What feature engineering method should be done to prepare the data for training?|One-hot encoding|
+|X and Y variables have a correlation coefficient of -0.98. What does it indicate?|Very strong negative correlation |
+|A machine learning engineer handles a small dataset with missing values. What should they do to ensure no data points are lost?|Use imputation techniques to fill in missing values|
+|**MLS-C01 Domain 3: Modeling**||
+|An ML engineer wants to evaluate the performance of a binary classification model visually. What visualization technique should be used?|Confusion matrix|
+|An ML engineer wants to discover topics available within a large text dataset. Which algorithm should the engineer train the model on?|Latent Dirichlet Allocation (LDA) algorithm|
+|A SageMaker Object2vec model is overfitting on a validation dataset. How do you solve this problem?|Use Regularization, in this case, adjusting the value of the Dropout parameter.|
+|A neural network model is being trained using a large dataset in batches. As the training progresses, the loss function begins to oscillate. Which could be the cause?|The learning rate is too high|
+|What SageMaker built-in algorithm is suitable for predicting click-through rate (CTR) patterns?|Factorization machines|
+|**MLS-C01 Domain 4: Machine Learning Implementation and Operations**||
+|An ML engineer wants to auto-scale the instances behind a SageMaker endpoint according to the volume of incoming requests. Which metric should this scaling be based on?|InvocationsPerInstance|
+|Which AWS service can you use to convert audio formats into text?|Amazon Transcribe|
+|An ML engineer is training a cluster of SageMaker instances. The traffic between the instances must be encrypted.|Enable inter-container traffic encryption|
+|A company wants to use Amazon SageMaker to deploy various ML models in a cost-effective way.|Use multi-model endpoint|
+|What AWS service can help you build an AI-powered chatbot that can interact with customers?|Amazon Lex|
 
 Reference Notes: https://docs.google.com/document/d/158_KYe21vzQwI8nsu1ZNX2L27S6eLrzm9SeN5cQhlLs/edit
 
